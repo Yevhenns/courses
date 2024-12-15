@@ -1,6 +1,6 @@
 <template>
     <div class="courseSelector">
-        <img src="/assets/images/flag.png" width="44" height="44" alt="flag" />
+        <img src="/images/flag.png" width="44" height="44" alt="flag" />
         <div>
             <button class="selectorButton">
                 <span>Польська</span>

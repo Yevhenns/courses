@@ -3,7 +3,7 @@
         <header class="header">
             <div class="wrapper">
                 <AppCourseSelector />
-                <AppNotificationButton />
+                <AppIconButton />
             </div>
             <AppProgressBar />
         </header>

@@ -3,7 +3,7 @@
         <div class="banner">
             <div class="bannerInfo">
                 <img
-                    src="/assets/images/banner.svg"
+                    src="/images/banner.svg"
                     width="76"
                     height="76"
                     alt="banner image"
