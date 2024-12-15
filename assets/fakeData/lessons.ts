@@ -8,25 +8,25 @@ export const lessons = [
     {
         id: "2",
         title: "Урок 2",
-        description: "Cześć",
+        description: "Moje imię",
         img: "/images/lessons/lesson2.png",
     },
     {
         id: "3",
         title: "Урок 3",
-        description: "Cześć",
-        img: "/images/lessons/lesson1.png",
+        description: "Jak się masz?",
+        img: "/images/lessons/lesson3.png",
     },
     {
         id: "4",
         title: "Урок 4",
-        description: "Cześć",
-        img: "/images/lessons/lesson2.png",
+        description: "Co robisz?",
+        img: "/images/lessons/lesson4.png",
     },
     {
         id: "5",
         title: "Урок 5",
         description: "Cześć",
-        img: "/images/lessons/lesson1.png",
+        img: "/images/lessons/lesson5.png",
     },
 ];
