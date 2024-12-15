@@ -1,6 +1,21 @@
 <template>
     <AppContainer>
-        <img src="/assets/images/flag.png" width="44" height="44" alt="flag" />
-        <AppNotificationButton />
+        <header class="header">
+            <div class="wrapper">
+                <AppCourseSelector />
+                <AppNotificationButton />
+            </div>
+            <AppProgressBar />
+        </header>
     </AppContainer>
 </template>
+
+<style>
+.header {
+    padding: 16px 0;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+</style>

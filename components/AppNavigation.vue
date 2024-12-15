@@ -60,9 +60,7 @@
     background-color: #ffffff;
     height: 80px;
     padding-top: 8px;
-    font-family: "SF Pro Display";
     font-weight: 600;
-    line-height: 1.2;
     font-size: 12px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;

@@ -13,6 +13,10 @@ body,
 p {
     margin: 0;
     background-color: #f2f3fa;
+    font-family: "SF Pro Display";
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 a {

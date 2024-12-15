@@ -1,3 +1,3 @@
 <template>
-    <h1>Favorite</h1>
+    <h1>Обране</h1>
 </template>

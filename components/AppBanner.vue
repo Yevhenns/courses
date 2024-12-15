@@ -34,9 +34,6 @@
     background-color: #ffffff;
     border-radius: 8px;
     overflow: hidden;
-    font-family: "SF Pro Display";
-    font-size: 16px;
-    font-weight: 400;
     line-height: 1.2;
 }
 

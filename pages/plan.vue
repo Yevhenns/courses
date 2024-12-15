@@ -1,3 +1,3 @@
 <template>
-    <h1>Plan</h1>
+    <h1>План</h1>
 </template>
