@@ -31,6 +31,7 @@
 <style scoped>
 .banner {
     border: 1px solid #ff8733;
+    background-color: #ffffff;
     border-radius: 8px;
     overflow: hidden;
     font-family: "SF Pro Display";
@@ -52,18 +53,21 @@
     gap: 4px;
 }
 
-.descriptionText {
-    color: #4e4e4e;
-}
-
 .greetingText {
     color: #ae978a;
+    background-color: inherit;
 }
 
 .discountText {
+    background-color: inherit;
     color: #793708;
     font-size: 18px;
     font-weight: 700;
+}
+
+.descriptionText {
+    background-color: inherit;
+    color: #4e4e4e;
 }
 
 .buyLink {
