@@ -36,7 +36,7 @@ onClickOutside(target, () => (popoverIsShown.value = false));
 </template>
 
 <style scoped lang="scss">
-@import "/assets/css/variables.scss";
+@use "/assets/css/variables.scss" as *;
 
 .courseSelector {
     position: relative;

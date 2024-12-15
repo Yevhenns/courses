@@ -3,7 +3,7 @@
 </template>
 
 <style scoped lang="scss">
-@import "/assets/css/variables.scss";
+@use "/assets/css/variables.scss" as *;
 
 .popover {
     border: $border;
@@ -12,5 +12,6 @@
     background-color: $white-color;
     border-radius: 8px;
     padding: 4px;
+    z-index: 2;
 }
 </style>

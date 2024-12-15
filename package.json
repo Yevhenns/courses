@@ -17,6 +17,7 @@
         "pinia": "^2.3.0",
         "sass": "^1.83.0",
         "vue": "latest",
+        "vue-confetti-explosion": "^1.0.2",
         "vue-router": "latest"
     }
 }

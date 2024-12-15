@@ -46,7 +46,7 @@ const store = useCoursesStore();
 </template>
 
 <style scoped lang="scss">
-@import "/assets/css/variables.scss";
+@use "/assets/css/variables.scss" as *;
 
 .lessonsListSection {
     margin: 16px;

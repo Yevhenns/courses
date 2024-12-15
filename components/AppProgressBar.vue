@@ -31,7 +31,7 @@ watch(() => store.progressCount, calculateProgress);
 </template>
 
 <style scoped lang="scss">
-@import "/assets/css/variables.scss";
+@use "/assets/css/variables.scss" as *;
 
 .barWrapper {
     display: flex;

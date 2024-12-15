@@ -45,7 +45,7 @@ onClickOutside(target, () => (popoverIsShown.value = false));
 </template>
 
 <style scoped lang="scss">
-@import "/assets/css/variables.scss";
+@use "/assets/css/variables.scss" as *;
 
 .header {
     border-bottom: $grey-border;
@@ -53,7 +53,7 @@ onClickOutside(target, () => (popoverIsShown.value = false));
     top: 0;
     width: 100%;
     background-color: $main-bg;
-    z-index: 9;
+    z-index: 1;
 
     .headerWrapper {
         padding: 16px 0;
