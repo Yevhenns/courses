@@ -1,34 +1,44 @@
+<script setup lang="ts">
+import AppContainer from "~/shared/AppContainer.vue";
+</script>
+
 <template>
-    <AppContainer>
-        <div class="banner">
-            <div class="bannerInfo">
-                <img
-                    src="/images/banner.svg"
-                    width="76"
-                    height="76"
-                    alt="banner image"
-                />
-                <div class="textWrapper">
-                    <p class="greetingText">Раді тебе бачити</p>
-                    <p class="discountText">У тебе 7 безкоштовних уроків</p>
-                    <p class="descriptionText">
-                        Щоб мати необмежений доступ до навчання - оформи
-                        підписку.
-                    </p>
+    <section class="bannerSection">
+        <AppContainer>
+            <div class="banner">
+                <div class="bannerInfo">
+                    <img
+                        src="/images/banner.svg"
+                        width="76"
+                        height="76"
+                        alt="banner image"
+                    />
+                    <div class="textWrapper">
+                        <p class="greetingText">Раді тебе бачити</p>
+                        <p class="discountText">У тебе 7 безкоштовних уроків</p>
+                        <p class="descriptionText">
+                            Щоб мати необмежений доступ до навчання - оформи
+                            підписку.
+                        </p>
+                    </div>
                 </div>
+                <a
+                    class="buyLink"
+                    href="https://github.com/Yevhenns/courses.git"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Купити підписку</a
+                >
             </div>
-            <a
-                class="buyLink"
-                href="https://github.com/Yevhenns/courses.git"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Купити підписку</a
-            >
-        </div>
-    </AppContainer>
+        </AppContainer>
+    </section>
 </template>
 
 <style scoped>
+.bannerSection {
+    margin-top: 16px;
+}
+
 .banner {
     border: 1px solid #ff8733;
     background-color: #ffffff;

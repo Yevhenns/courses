@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import AppContainer from "~/shared/AppContainer.vue";
+</script>
+
 <template>
     <section class="section">
         <AppContainer>
