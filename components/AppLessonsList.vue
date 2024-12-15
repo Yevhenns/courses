@@ -16,15 +16,18 @@ const store = useCoursesStore();
                         <p class="chapter">Розділ 1</p>
                         <p class="chapterDescription">Почніть навчання</p>
                     </div>
-                    <AppIconButton @click="store.toggleIsShownLessons()">
+                    <AppIconButton
+                        class="icon-btn"
+                        @click="store.toggleIsShownLessons()"
+                    >
                         <Icon
+                            class="icon"
                             :style="
                                 store.isShownLessons
                                     ? { transform: 'rotate(180deg)' }
                                     : {}
                             "
                             name="line-md:chevron-small-up"
-                            style="color: #ff8733"
                             size="24"
                         />
                     </AppIconButton>

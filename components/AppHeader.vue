@@ -9,10 +9,10 @@ import AppIconButton from "~/shared/AppIconButton.vue";
             <div class="headerWrapper">
                 <div class="wrapper">
                     <AppCourseSelector />
-                    <AppIconButton :isCountShown="true">
+                    <AppIconButton class="icon-btn" :isCountShown="true">
                         <Icon
+                            class="icon"
                             name="material-symbols:notifications-rounded"
-                            style="color: #ff8733"
                             size="24"
                         />
                     </AppIconButton>

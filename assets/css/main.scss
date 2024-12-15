@@ -28,3 +28,14 @@ a {
 img {
     display: block;
 }
+
+.icon-btn {
+    .icon {
+        color: $accent-color;
+        transition: $transition;
+    }
+
+    &:hover .icon {
+        color: $button-hover;
+    }
+}

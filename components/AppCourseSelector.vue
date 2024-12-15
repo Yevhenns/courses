@@ -32,6 +32,11 @@
         color: $blue-color;
         font-size: 22px;
         font-weight: 600;
+        transition: $transition;
+
+        &:hover {
+            transform: scale(1.02);
+        }
     }
 
     .selectorInfo {

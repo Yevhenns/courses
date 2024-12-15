@@ -40,6 +40,11 @@ const isLessonCompleted = () => {
     box-shadow: $box-shadow;
     padding-right: 8px;
     cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+        transform: scale(1.02);
+    }
 
     .lessonTitle {
         background-color: inherit;
