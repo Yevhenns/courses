@@ -7,28 +7,40 @@ import { lessons } from "~/assets/fakeData/lessons";
 <template>
     <section class="lessonsListSection">
         <AppContainer>
-            <div class="chapterWrapper">
-                <div>
-                    <p class="chapter">Розділ 1</p>
-                    <p class="chapterDescription">Почніть навчання</p>
+            <div class="listWrapper">
+                <div class="chapterWrapper">
+                    <div>
+                        <p class="chapter">Розділ 1</p>
+                        <p class="chapterDescription">Почніть навчання</p>
+                    </div>
+                    <AppIconButton />
                 </div>
-                <AppIconButton />
+                <AppLessonsListItem
+                    v-for="lesson in lessons"
+                    :title="lesson.title"
+                    :description="lesson.description"
+                    :img="lesson.img"
+                />
             </div>
-            <AppLessonsListItem v-for="lesson in lessons" />
         </AppContainer>
     </section>
 </template>
 
 <style>
 .lessonsListSection {
-    margin-top: 16px;
+    margin: 16px;
+}
+
+.listWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .chapterWrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 8px;
 }
 
 .chapter {
