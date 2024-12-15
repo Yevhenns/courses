@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { onClickOutside } from "@vueuse/core";
 import AppContainer from "~/shared/AppContainer.vue";
 import AppIconButton from "~/shared/AppIconButton.vue";
 import AppPopover from "~/shared/AppPopover.vue";
@@ -8,6 +9,10 @@ const popoverIsShown = ref(false);
 const togglePopover = () => {
     popoverIsShown.value = !popoverIsShown.value;
 };
+
+const target = ref(null);
+
+onClickOutside(target, () => (popoverIsShown.value = false));
 </script>
 
 <template>
@@ -27,7 +32,11 @@ const togglePopover = () => {
                             size="24"
                         />
                     </AppIconButton>
-                    <AppPopover v-if="popoverIsShown" class="popover" />
+                    <AppPopover
+                        ref="target"
+                        v-if="popoverIsShown"
+                        class="popover"
+                    />
                 </div>
                 <AppProgressBar />
             </div>

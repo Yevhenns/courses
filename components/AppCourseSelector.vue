@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { onClickOutside } from "@vueuse/core";
 import AppPopover from "~/shared/AppPopover.vue";
 
 const popoverIsShown = ref(false);
@@ -6,6 +7,10 @@ const popoverIsShown = ref(false);
 const togglePopover = () => {
     popoverIsShown.value = !popoverIsShown.value;
 };
+
+const target = ref(null);
+
+onClickOutside(target, () => (popoverIsShown.value = false));
 </script>
 
 <template>
@@ -26,7 +31,7 @@ const togglePopover = () => {
             </button>
             <p class="selectorInfo">Лікар (В2)</p>
         </div>
-        <AppPopover v-if="popoverIsShown" class="popover" />
+        <AppPopover ref="target" v-if="popoverIsShown" class="popover" />
     </div>
 </template>
 
