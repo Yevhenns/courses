@@ -13,7 +13,13 @@ import { lessons } from "~/assets/fakeData/lessons";
                         <p class="chapter">Розділ 1</p>
                         <p class="chapterDescription">Почніть навчання</p>
                     </div>
-                    <AppIconButton />
+                    <AppIconButton>
+                        <Icon
+                            name="line-md:chevron-small-up"
+                            style="color: #ff8733"
+                            size="24"
+                        />
+                    </AppIconButton>
                 </div>
                 <AppLessonsListItem
                     v-for="lesson in lessons"

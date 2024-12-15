@@ -1,11 +1,16 @@
+<script setup lang="ts">
+defineProps({
+    isCountShown: {
+        type: Boolean,
+        default: false,
+    },
+});
+</script>
+
 <template>
     <button class="notificationButton">
-        <Icon
-            name="material-symbols:notifications-rounded"
-            style="color: #ff8733"
-            size="24"
-        />
-        <div class="notificationCount">7</div>
+        <slot></slot>
+        <div v-if="isCountShown" class="notificationCount">7</div>
     </button>
 </template>
 

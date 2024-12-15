@@ -9,7 +9,13 @@ import AppIconButton from "~/shared/AppIconButton.vue";
             <div class="headerWrapper">
                 <div class="wrapper">
                     <AppCourseSelector />
-                    <AppIconButton />
+                    <AppIconButton :isCountShown="true">
+                        <Icon
+                            name="material-symbols:notifications-rounded"
+                            style="color: #ff8733"
+                            size="24"
+                        />
+                    </AppIconButton>
                 </div>
                 <AppProgressBar />
             </div>
