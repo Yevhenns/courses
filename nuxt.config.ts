@@ -4,4 +4,16 @@ export default defineNuxtConfig({
     devtools: { enabled: true },
     modules: ["@nuxt/icon", "@pinia/nuxt"],
     css: ["~/assets/css/main.scss"],
+    app: {
+        head: {
+            title: "Уроки",
+            meta: [
+                {
+                    name: "description",
+                    content: "Застосунок для вивчення іноземних мов",
+                },
+            ],
+            link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+        },
+    },
 });
