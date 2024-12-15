@@ -56,6 +56,7 @@
 
 <style scoped>
 .section {
+    margin-top: auto;
     background-color: #ffffff;
     height: 80px;
     padding-top: 8px;
