@@ -1,3 +1,5 @@
 <template>
-    <h1>Профіль</h1>
+    <AppContainer>
+        <h1>Профіль</h1>
+    </AppContainer>
 </template>
