@@ -34,58 +34,63 @@ import AppContainer from "~/shared/AppContainer.vue";
     </section>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .bannerSection {
     margin-top: 16px;
     padding-top: 110px;
-}
 
-.banner {
-    border: 1px solid #ff8733;
-    background-color: #ffffff;
-    border-radius: 8px;
-    overflow: hidden;
-    line-height: 1.2;
-}
+    .banner {
+        border: 1px solid #ff8733;
+        background-color: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+        line-height: 1.2;
+    }
 
-.bannerInfo {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    padding: 16px;
-}
+    .bannerInfo {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        padding: 16px;
+    }
 
-.textWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
+    .textWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
 
-.greetingText {
-    color: #ae978a;
-    background-color: inherit;
-}
+    .greetingText {
+        color: #ae978a;
+        background-color: inherit;
+    }
 
-.discountText {
-    background-color: inherit;
-    color: #793708;
-    font-size: 18px;
-    font-weight: 700;
-}
+    .discountText {
+        background-color: inherit;
+        color: #793708;
+        font-size: 18px;
+        font-weight: 700;
+    }
 
-.descriptionText {
-    background-color: inherit;
-    color: #4e4e4e;
-}
+    .descriptionText {
+        background-color: inherit;
+        color: #4e4e4e;
+    }
 
-.buyLink {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 56px;
-    background-color: #ff8733;
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: 600;
+    .buyLink {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 56px;
+        background-color: #ff8733;
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 600;
+        transition: all 300ms linear;
+
+        &:hover {
+            background-color: #ec6c11;
+        }
+    }
 }
 </style>
