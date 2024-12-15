@@ -1,13 +1,15 @@
 <script setup lang="ts">
+import { useCoursesStore } from "~/store/courses";
+
 const bar = ref<HTMLElement | null>(null);
 
-const progressCount = ref(72);
+const store = useCoursesStore();
 const progressWidth = ref(0);
 
 onMounted(() => {
     if (bar.value) {
         const barWidth = bar.value.offsetWidth;
-        const calculatedProgress = (progressCount.value * barWidth) / 100;
+        const calculatedProgress = (store.progressCount * barWidth) / 100;
         progressWidth.value = calculatedProgress;
     }
 });
@@ -18,7 +20,7 @@ onMounted(() => {
         <div class="bar" ref="bar">
             <div class="progress" :style="{ width: `${progressWidth}px` }" />
         </div>
-        <span>{{ progressCount }}%</span>
+        <span>{{ store.progressCount }}%</span>
     </div>
 </template>
 

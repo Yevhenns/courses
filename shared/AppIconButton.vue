@@ -23,6 +23,7 @@ defineProps({
     box-shadow: 0px 2px 7px 0px rgba(216, 107, 31, 0.14);
     border: none;
     border-radius: 16px;
+    cursor: pointer;
 }
 
 .notificationCount {

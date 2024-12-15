@@ -2,6 +2,9 @@
 import AppContainer from "~/shared/AppContainer.vue";
 import AppIconButton from "~/shared/AppIconButton.vue";
 import { lessons } from "~/assets/fakeData/lessons";
+import { useCoursesStore } from "~/store/courses";
+
+const store = useCoursesStore();
 </script>
 
 <template>
@@ -13,8 +16,13 @@ import { lessons } from "~/assets/fakeData/lessons";
                         <p class="chapter">Розділ 1</p>
                         <p class="chapterDescription">Почніть навчання</p>
                     </div>
-                    <AppIconButton>
+                    <AppIconButton @click="store.toggleIsShownLessons()">
                         <Icon
+                            :style="
+                                store.isShownLessons
+                                    ? { transform: 'rotate(180deg)' }
+                                    : {}
+                            "
                             name="line-md:chevron-small-up"
                             style="color: #ff8733"
                             size="24"
@@ -22,6 +30,7 @@ import { lessons } from "~/assets/fakeData/lessons";
                     </AppIconButton>
                 </div>
                 <AppLessonsListItem
+                    v-if="store.isShownLessons"
                     v-for="lesson in lessons"
                     :title="lesson.title"
                     :description="lesson.description"

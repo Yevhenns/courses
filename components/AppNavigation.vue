@@ -62,7 +62,7 @@ import AppContainer from "~/shared/AppContainer.vue";
 .section {
     margin-top: auto;
     background-color: #ffffff;
-    height: 80px;
+    min-height: 80px;
     padding-top: 8px;
     font-weight: 600;
     font-size: 12px;
