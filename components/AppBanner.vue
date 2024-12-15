@@ -32,8 +32,11 @@
 .banner {
     border: 1px solid #ff8733;
     border-radius: 8px;
-    font-family: "SF Pro Display";
     overflow: hidden;
+    font-family: "SF Pro Display";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
 }
 
 .bannerInfo {
