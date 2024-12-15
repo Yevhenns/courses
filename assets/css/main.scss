@@ -1,4 +1,5 @@
 @import "../fonts/stylesheet.css";
+@import "./variables.scss";
 
 html {
     box-sizing: border-box;
@@ -12,7 +13,7 @@ html {
 body,
 p {
     margin: 0;
-    background-color: #f2f3fa;
+    background-color: $main-bg;
     font-family: "SF Pro Display";
     line-height: 1.2;
     font-weight: 400;

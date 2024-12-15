@@ -16,6 +16,8 @@
 </template>
 
 <style scoped lang="scss">
+@import "/assets/css/variables.scss";
+
 .courseSelector {
     display: flex;
     gap: 10px;
@@ -27,13 +29,13 @@
         padding: 0;
         border: none;
         background-color: transparent;
-        color: #3a89fd;
+        color: $blue-color;
         font-size: 22px;
         font-weight: 600;
     }
 
     .selectorInfo {
-        color: #4e4e4e;
+        color: $secondary-dark-color;
     }
 }
 </style>

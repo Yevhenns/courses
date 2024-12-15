@@ -43,6 +43,8 @@ const store = useCoursesStore();
 </template>
 
 <style scoped lang="scss">
+@import "/assets/css/variables.scss";
+
 .lessonsListSection {
     margin: 16px;
 
@@ -59,14 +61,14 @@ const store = useCoursesStore();
     }
 
     .chapter {
-        color: #793708;
+        color: $heading-text-color;
         font-size: 22px;
         font-weight: 600;
         margin-bottom: 4px;
     }
 
     .chapterDescription {
-        color: #7a7a7a;
+        color: $secondary-grey-color;
     }
 }
 </style>

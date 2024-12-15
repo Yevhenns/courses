@@ -15,12 +15,14 @@ defineProps({
 </template>
 
 <style scoped lang="scss">
+@import "/assets/css/variables.scss";
+
 .notificationButton {
     position: relative;
     width: 50px;
     height: 50px;
-    background-color: #ffffff;
-    box-shadow: 0px 2px 7px 0px rgba(216, 107, 31, 0.14);
+    background-color: $white-color;
+    box-shadow: $box-shadow;
     border: none;
     border-radius: 16px;
     cursor: pointer;
@@ -35,8 +37,8 @@ defineProps({
     align-items: center;
     width: 24px;
     height: 24px;
-    background-color: #3a89fd;
-    color: #ffffff;
+    background-color: $blue-color;
+    color: $white-color;
     border-radius: 50%;
     font-size: 12px;
     font-weight: 800;

@@ -35,13 +35,15 @@ import AppContainer from "~/shared/AppContainer.vue";
 </template>
 
 <style scoped lang="scss">
+@import "/assets/css/variables.scss";
+
 .bannerSection {
     margin-top: 16px;
     padding-top: 110px;
 
     .banner {
-        border: 1px solid #ff8733;
-        background-color: #ffffff;
+        border: $border;
+        background-color: $white-color;
         border-radius: 8px;
         overflow: hidden;
         line-height: 1.2;
@@ -61,20 +63,20 @@ import AppContainer from "~/shared/AppContainer.vue";
     }
 
     .greetingText {
-        color: #ae978a;
+        color: $secondary-light-color;
         background-color: inherit;
     }
 
     .discountText {
         background-color: inherit;
-        color: #793708;
+        color: $heading-text-color;
         font-size: 18px;
         font-weight: 700;
     }
 
     .descriptionText {
         background-color: inherit;
-        color: #4e4e4e;
+        color: $secondary-dark-color;
     }
 
     .buyLink {
@@ -82,14 +84,14 @@ import AppContainer from "~/shared/AppContainer.vue";
         justify-content: center;
         align-items: center;
         height: 56px;
-        background-color: #ff8733;
-        color: #ffffff;
+        background-color: $accent-color;
+        color: $white-color;
         font-size: 22px;
         font-weight: 600;
-        transition: all 300ms linear;
+        transition: $transition;
 
         &:hover {
-            background-color: #ec6c11;
+            background-color: $button-hover;
         }
     }
 }

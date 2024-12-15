@@ -59,16 +59,18 @@ import AppContainer from "~/shared/AppContainer.vue";
 </template>
 
 <style scoped lang="scss">
+@import "/assets/css/variables.scss";
+
 .section {
     margin-top: auto;
-    background-color: #ffffff;
+    background-color: $white-color;
     min-height: 80px;
     padding-top: 8px;
     font-weight: 600;
     font-size: 12px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
-    box-shadow: 0px -4px 14px 0px rgba(65, 71, 114, 0.14);
+    box-shadow: $box-shadow-nav;
 
     .nav {
         display: flex;
@@ -80,11 +82,11 @@ import AppContainer from "~/shared/AppContainer.vue";
         flex-direction: column;
         align-items: center;
         gap: 8px;
-        color: #ae978a;
+        color: $secondary-light-color;
     }
 
     ::v-deep(.router-link-active) {
-        color: #ff8733;
+        color: $accent-color;
     }
 }
 </style>

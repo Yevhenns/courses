@@ -24,12 +24,14 @@ import AppIconButton from "~/shared/AppIconButton.vue";
 </template>
 
 <style scoped lang="scss">
+@import "/assets/css/variables.scss";
+
 .header {
-    border-bottom: 1px solid #c7c7c7;
+    border-bottom: $grey-border;
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #f2f3fa;
+    background-color: $main-bg;
     z-index: 9;
 
     .headerWrapper {

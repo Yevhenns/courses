@@ -31,6 +31,8 @@ watch(() => store.progressCount, calculateProgress);
 </template>
 
 <style scoped lang="scss">
+@import "/assets/css/variables.scss";
+
 .barWrapper {
     display: flex;
     align-items: center;
@@ -41,7 +43,7 @@ watch(() => store.progressCount, calculateProgress);
         position: relative;
         width: 245px;
         height: 6px;
-        background-color: #c7c7c7;
+        background-color: $secondary-bg;
         border-radius: 3px;
         overflow: hidden;
     }
@@ -51,7 +53,7 @@ watch(() => store.progressCount, calculateProgress);
         height: 100%;
         top: 0;
         left: 0;
-        background-color: red;
+        background-color: $red-color;
     }
 }
 </style>
