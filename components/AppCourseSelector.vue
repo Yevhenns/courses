@@ -4,8 +4,8 @@ import AppPopover from "~/shared/AppPopover.vue";
 
 const popoverIsShown = ref(false);
 
-const togglePopover = () => {
-    popoverIsShown.value = !popoverIsShown.value;
+const openPopover = () => {
+    popoverIsShown.value = true;
 };
 
 const target = ref(null);
@@ -17,7 +17,7 @@ onClickOutside(target, () => (popoverIsShown.value = false));
     <div class="courseSelector">
         <img src="/images/flag.png" width="44" height="44" alt="flag" />
         <div>
-            <button class="selectorButton" @click="togglePopover">
+            <button class="selectorButton" @click="openPopover">
                 <span>Польська</span>
                 <Icon
                     class="icon"
@@ -70,7 +70,7 @@ onClickOutside(target, () => (popoverIsShown.value = false));
 
     .popover {
         position: absolute;
-        top: 50px;
+        top: 0;
         left: 0;
     }
 }

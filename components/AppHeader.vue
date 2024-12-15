@@ -7,8 +7,8 @@ import AppPopover from "~/shared/AppPopover.vue";
 const popoverIsShown = ref(false);
 const notifications = ref(4);
 
-const togglePopover = () => {
-    popoverIsShown.value = !popoverIsShown.value;
+const openPopover = () => {
+    popoverIsShown.value = true;
     notifications.value = 0;
 };
 
@@ -24,7 +24,7 @@ onClickOutside(target, () => (popoverIsShown.value = false));
                 <div class="wrapper">
                     <AppCourseSelector />
                     <AppIconButton
-                        @click="togglePopover"
+                        @click="openPopover"
                         class="icon-btn"
                         :isCountShown="true"
                         :notifications="notifications"
@@ -72,7 +72,7 @@ onClickOutside(target, () => (popoverIsShown.value = false));
 
     .popover {
         position: absolute;
-        top: 50px;
+        top: 0;
         right: 0;
     }
 }

@@ -49,7 +49,7 @@ const store = useCoursesStore();
 @use "/assets/css/variables.scss" as *;
 
 .lessonsListSection {
-    margin: 16px;
+    margin: 16px 0;
 
     .listWrapper {
         display: flex;

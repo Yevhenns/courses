@@ -7,8 +7,8 @@
 
 .popover {
     border: $border;
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 400px;
     background-color: $white-color;
     border-radius: 8px;
     padding: 4px;
