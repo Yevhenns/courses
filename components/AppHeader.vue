@@ -5,9 +5,11 @@ import AppIconButton from "~/shared/AppIconButton.vue";
 import AppPopover from "~/shared/AppPopover.vue";
 
 const popoverIsShown = ref(false);
+const notifications = ref(4);
 
 const togglePopover = () => {
     popoverIsShown.value = !popoverIsShown.value;
+    notifications.value = 0;
 };
 
 const target = ref(null);
@@ -25,6 +27,7 @@ onClickOutside(target, () => (popoverIsShown.value = false));
                         @click="togglePopover"
                         class="icon-btn"
                         :isCountShown="true"
+                        :notifications="notifications"
                     >
                         <Icon
                             class="icon"

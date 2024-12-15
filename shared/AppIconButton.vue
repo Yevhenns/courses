@@ -4,13 +4,19 @@ defineProps({
         type: Boolean,
         default: false,
     },
+    notifications: Number,
 });
 </script>
 
 <template>
     <button class="notificationButton">
         <slot></slot>
-        <div v-if="isCountShown" class="notificationCount">7</div>
+        <div
+            v-if="isCountShown && notifications && notifications > 0"
+            class="notificationCount"
+        >
+            {{ notifications }}
+        </div>
     </button>
 </template>
 
