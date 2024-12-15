@@ -1,6 +1,13 @@
 <script setup lang="ts">
 import AppContainer from "~/shared/AppContainer.vue";
 import AppIconButton from "~/shared/AppIconButton.vue";
+import AppPopover from "~/shared/AppPopover.vue";
+
+const popoverIsShown = ref(false);
+
+const togglePopover = () => {
+    popoverIsShown.value = !popoverIsShown.value;
+};
 </script>
 
 <template>
@@ -9,13 +16,18 @@ import AppIconButton from "~/shared/AppIconButton.vue";
             <div class="headerWrapper">
                 <div class="wrapper">
                     <AppCourseSelector />
-                    <AppIconButton class="icon-btn" :isCountShown="true">
+                    <AppIconButton
+                        @click="togglePopover"
+                        class="icon-btn"
+                        :isCountShown="true"
+                    >
                         <Icon
                             class="icon"
                             name="material-symbols:notifications-rounded"
                             size="24"
                         />
                     </AppIconButton>
+                    <AppPopover v-if="popoverIsShown" class="popover" />
                 </div>
                 <AppProgressBar />
             </div>
@@ -43,6 +55,13 @@ import AppIconButton from "~/shared/AppIconButton.vue";
         align-items: center;
         justify-content: space-between;
         margin-bottom: 8px;
+        position: relative;
+    }
+
+    .popover {
+        position: absolute;
+        top: 50px;
+        right: 0;
     }
 }
 </style>
