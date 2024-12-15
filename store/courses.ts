@@ -1,3 +1,5 @@
+import { lessons } from "~/assets/fakeData/lessons";
+
 export const useCoursesStore = defineStore("courses", () => {
     const progressCount = ref(0);
     const isShownLessons = ref(true);
@@ -17,6 +19,8 @@ export const useCoursesStore = defineStore("courses", () => {
             return;
         }
         completedLessons.value.push(id);
+        progressCount.value =
+            (completedLessons.value.length / lessons.length) * 100;
     }
 
     return {

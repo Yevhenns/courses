@@ -16,7 +16,7 @@ const isLessonCompleted = () => {
 </script>
 
 <template>
-    <div class="lessonsListItem">
+    <div class="lessonsListItem" @click="store.setLessonCompleted(id)">
         <img :src="img" width="80" height="80" alt="lesson image" />
         <div>
             <p class="lessonTitle">{{ title }}</p>
@@ -37,6 +37,7 @@ const isLessonCompleted = () => {
     align-items: center;
     box-shadow: 0px 2px 7px 0px rgba(216, 107, 31, 0.14);
     padding-right: 8px;
+    cursor: pointer;
 }
 
 .lessonTitle {

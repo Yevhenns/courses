@@ -6,13 +6,19 @@ const bar = ref<HTMLElement | null>(null);
 const store = useCoursesStore();
 const progressWidth = ref(0);
 
-onMounted(() => {
+const calculateProgress = () => {
     if (bar.value) {
         const barWidth = bar.value.offsetWidth;
         const calculatedProgress = (store.progressCount * barWidth) / 100;
         progressWidth.value = calculatedProgress;
     }
+};
+
+onMounted(() => {
+    calculateProgress();
 });
+
+watch(() => store.progressCount, calculateProgress);
 </script>
 
 <template>
