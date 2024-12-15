@@ -32,6 +32,7 @@ const store = useCoursesStore();
                 <AppLessonsListItem
                     v-if="store.isShownLessons"
                     v-for="lesson in lessons"
+                    :id="lesson.id"
                     :title="lesson.title"
                     :description="lesson.description"
                     :img="lesson.img"

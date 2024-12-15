@@ -1,9 +1,18 @@
 <script setup lang="ts">
-defineProps<{
+import { useCoursesStore } from "~/store/courses";
+
+const props = defineProps<{
+    id: string;
     title: string;
     description: string;
     img: string;
 }>();
+
+const store = useCoursesStore();
+
+const isLessonCompleted = () => {
+    return store.completedLessons.some((item) => item === props.id);
+};
 </script>
 
 <template>
@@ -13,6 +22,7 @@ defineProps<{
             <p class="lessonTitle">{{ title }}</p>
             <p class="lessonDescription">{{ description }}</p>
         </div>
+        <p v-if="isLessonCompleted()" class="successText">Пройдено</p>
     </div>
 </template>
 
@@ -26,6 +36,7 @@ defineProps<{
     gap: 20px;
     align-items: center;
     box-shadow: 0px 2px 7px 0px rgba(216, 107, 31, 0.14);
+    padding-right: 8px;
 }
 
 .lessonTitle {
@@ -39,5 +50,11 @@ defineProps<{
     color: #793708;
     font-size: 18px;
     font-weight: 700;
+}
+
+.successText {
+    background-color: inherit;
+    color: green;
+    margin-left: auto;
 }
 </style>
