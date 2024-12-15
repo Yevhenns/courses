@@ -4,6 +4,15 @@ export default defineNuxtConfig({
     devtools: { enabled: true },
     modules: ["@nuxt/icon", "@pinia/nuxt"],
     css: ["~/assets/css/main.scss"],
+    vite: {
+        css: {
+            preprocessorOptions: {
+                scss: {
+                    additionalData: '@use "/assets/css/_variables.scss" as *;',
+                },
+            },
+        },
+    },
     app: {
         head: {
             title: "Уроки",

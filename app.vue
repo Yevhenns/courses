@@ -6,6 +6,8 @@
 </template>
 
 <style scoped lang="scss">
+@use "/assets/css/main.scss";
+
 .app {
     display: flex;
     flex-direction: column;
