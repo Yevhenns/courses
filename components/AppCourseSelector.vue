@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { onClickOutside } from "@vueuse/core";
-import AppPopover from "~/shared/AppPopover.vue";
 
 const popoverIsShown = ref(false);
 

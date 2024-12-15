@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import AppContainer from "~/shared/AppContainer.vue";
-import AppIconButton from "~/shared/AppIconButton.vue";
 import { lessons } from "~/assets/fakeData/lessons";
 import { useCoursesStore } from "~/store/courses";
 

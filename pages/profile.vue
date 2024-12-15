@@ -1,6 +1,4 @@
-<script setup lang="ts">
-import AppContainer from "~/shared/AppContainer.vue";
-</script>
+<script setup lang="ts"></script>
 
 <template>
     <AppContainer>

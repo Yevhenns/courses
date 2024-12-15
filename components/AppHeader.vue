@@ -1,8 +1,5 @@
 <script setup lang="ts">
 import { onClickOutside } from "@vueuse/core";
-import AppContainer from "~/shared/AppContainer.vue";
-import AppIconButton from "~/shared/AppIconButton.vue";
-import AppPopover from "~/shared/AppPopover.vue";
 
 const popoverIsShown = ref(false);
 const notifications = ref(4);
