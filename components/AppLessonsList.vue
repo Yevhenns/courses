@@ -45,33 +45,33 @@ const store = useCoursesStore();
     </section>
 </template>
 
-<style scoped lang="scss">
-@use "/assets/css/variables.scss" as *;
+<style scoped>
+@import "/assets/css/variables.css";
 
 .lessonsListSection {
     margin: 16px 0;
+}
 
-    .listWrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    }
+.listWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
-    .chapterWrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+.chapterWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    .chapter {
-        color: $heading-text-color;
-        font-size: 22px;
-        font-weight: 600;
-        margin-bottom: 4px;
-    }
+.chapter {
+    color: var(--heading-text-color);
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
 
-    .chapterDescription {
-        color: $secondary-grey-color;
-    }
+.chapterDescription {
+    color: var(--secondary-grey-color);
 }
 </style>

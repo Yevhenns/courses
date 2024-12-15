@@ -1,4 +1,4 @@
-@use "./_variables.scss" as *;
+@import "./variables.css";
 @import "../fonts/stylesheet.css";
 
 html {
@@ -13,7 +13,7 @@ html {
 body,
 p {
     margin: 0;
-    background-color: $main-bg;
+    background-color: var(--main-bg);
     font-family: "SF Pro Display";
     line-height: 1.2;
     font-weight: 400;
@@ -29,13 +29,11 @@ img {
     display: block;
 }
 
-.icon-btn {
-    .icon {
-        color: $accent-color;
-        transition: $transition;
-    }
+.icon {
+    color: $accent-color;
+    transition: $transition;
+}
 
-    &:hover .icon {
-        color: $button-hover;
-    }
+.icon-btn:hover .icon {
+    color: $button-hover;
 }

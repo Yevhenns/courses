@@ -35,43 +35,44 @@ onClickOutside(target, () => (popoverIsShown.value = false));
     </div>
 </template>
 
-<style scoped lang="scss">
-@use "/assets/css/variables.scss" as *;
+<style scoped>
+@import "/assets/css/variables.css";
 
 .courseSelector {
     position: relative;
     display: flex;
     gap: 10px;
     align-items: center;
+}
 
-    .selectorButton {
-        display: flex;
-        align-items: center;
-        padding: 0;
-        border: none;
-        background-color: transparent;
-        color: $blue-color;
-        font-size: 22px;
-        font-weight: 600;
-        transition: $transition;
+.selectorButton {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: var(--blue-color);
+    font-size: 22px;
+    font-weight: 600;
+    transition: var(--transition);
+    cursor: pointer;
+}
 
-        &:hover {
-            transform: scale(1.02);
-        }
+.selectorButton:hover {
+    transform: scale(1.02);
+}
 
-        .icon {
-            transition: $transition;
-        }
-    }
+.icon {
+    transition: var(--transition);
+}
 
-    .selectorInfo {
-        color: $secondary-dark-color;
-    }
+.selectorInfo {
+    color: var(--secondary-dark-color);
+}
 
-    .popover {
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
+.popover {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 </style>

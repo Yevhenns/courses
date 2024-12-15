@@ -58,35 +58,35 @@ import AppContainer from "~/shared/AppContainer.vue";
     </section>
 </template>
 
-<style scoped lang="scss">
-@use "/assets/css/variables.scss" as *;
+<style scoped>
+@import "/assets/css/variables.css";
 
 .section {
     margin-top: auto;
-    background-color: $white-color;
+    background-color: var(--white-color);
     min-height: 80px;
     padding-top: 8px;
     font-weight: 600;
     font-size: 12px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
-    box-shadow: $box-shadow-nav;
+    box-shadow: var(--box-shadow-nav);
+}
 
-    .nav {
-        display: flex;
-        justify-content: space-between;
-    }
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
 
-    .nuxtLink {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-        color: $secondary-light-color;
-    }
+.nuxtLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: var(--secondary-light-color);
+}
 
-    ::v-deep(.router-link-active) {
-        color: $accent-color;
-    }
+::v-deep(.router-link-active) {
+    color: var(--accent-color);
 }
 </style>

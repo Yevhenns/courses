@@ -34,65 +34,65 @@ import AppContainer from "~/shared/AppContainer.vue";
     </section>
 </template>
 
-<style scoped lang="scss">
-@use "/assets/css/variables.scss" as *;
+<style scoped>
+@import "~/assets/css/variables.css";
 
 .bannerSection {
     margin-top: 16px;
     padding-top: 110px;
+}
 
-    .banner {
-        border: $border;
-        background-color: $white-color;
-        border-radius: 8px;
-        overflow: hidden;
-        line-height: 1.2;
-    }
+.banner {
+    border: var(border);
+    background-color: var(--white-color);
+    border-radius: 8px;
+    overflow: hidden;
+    line-height: 1.2;
+}
 
-    .bannerInfo {
-        display: flex;
-        align-items: center;
-        gap: 24px;
-        padding: 16px;
-    }
+.bannerInfo {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 16px;
+}
 
-    .textWrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-    }
+.textWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
 
-    .greetingText {
-        color: $secondary-light-color;
-        background-color: inherit;
-    }
+.greetingText {
+    color: var(--secondary-light-color);
+    background-color: inherit;
+}
 
-    .discountText {
-        background-color: inherit;
-        color: $heading-text-color;
-        font-size: 18px;
-        font-weight: 700;
-    }
+.discountText {
+    background-color: inherit;
+    color: var(--heading-text-color);
+    font-size: 18px;
+    font-weight: 700;
+}
 
-    .descriptionText {
-        background-color: inherit;
-        color: $secondary-dark-color;
-    }
+.descriptionText {
+    background-color: inherit;
+    color: var(--secondary-dark-color);
+}
 
-    .buyLink {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 56px;
-        background-color: $accent-color;
-        color: $white-color;
-        font-size: 22px;
-        font-weight: 600;
-        transition: $transition;
+.buyLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    font-size: 22px;
+    font-weight: 600;
+    transition: var(--transition);
+}
 
-        &:hover {
-            background-color: $button-hover;
-        }
-    }
+.buyLink:hover {
+    background-color: var(--button-hover);
 }
 </style>

@@ -47,33 +47,33 @@ onClickOutside(target, () => (popoverIsShown.value = false));
     </header>
 </template>
 
-<style scoped lang="scss">
-@use "/assets/css/variables.scss" as *;
+<style scoped>
+@import "/assets/css/variables.css";
 
 .header {
-    border-bottom: $grey-border;
+    border-bottom: var(--grey-border);
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: $main-bg;
+    background-color: var(--main-bg);
     z-index: 1;
+}
 
-    .headerWrapper {
-        padding: 16px 0;
-    }
+.headerWrapper {
+    padding: 16px 0;
+}
 
-    .wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 8px;
-        position: relative;
-    }
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    position: relative;
+}
 
-    .popover {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
+.popover {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 </style>

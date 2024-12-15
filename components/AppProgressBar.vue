@@ -30,30 +30,30 @@ watch(() => store.progressCount, calculateProgress);
     </div>
 </template>
 
-<style scoped lang="scss">
-@use "/assets/css/variables.scss" as *;
+<style scoped>
+@import "/assets/css/variables.css";
 
 .barWrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 4px;
+}
 
-    .bar {
-        position: relative;
-        width: 245px;
-        height: 6px;
-        background-color: $secondary-bg;
-        border-radius: 3px;
-        overflow: hidden;
-    }
+.bar {
+    position: relative;
+    width: 245px;
+    height: 6px;
+    background-color: var(--secondary-bg);
+    border-radius: 3px;
+    overflow: hidden;
+}
 
-    .progress {
-        position: absolute;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: $red-color;
-    }
+.progress {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--red-color);
 }
 </style>

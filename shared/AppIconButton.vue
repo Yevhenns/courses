@@ -20,33 +20,33 @@ defineProps({
     </button>
 </template>
 
-<style scoped lang="scss">
-@use "/assets/css/variables.scss" as *;
+<style scoped>
+@import "~/assets/css/variables.css";
 
 .notificationButton {
     position: relative;
     width: 50px;
     height: 50px;
-    background-color: $white-color;
-    box-shadow: $box-shadow;
+    background-color: var(--white-color);
+    box-shadow: var(--box-shadow);
     border: none;
     border-radius: 16px;
     cursor: pointer;
+}
 
-    .notificationCount {
-        position: absolute;
-        right: -8px;
-        top: -8px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 24px;
-        height: 24px;
-        background-color: $blue-color;
-        color: $white-color;
-        border-radius: 50%;
-        font-size: 12px;
-        font-weight: 800;
-    }
+.notificationCount {
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 800;
 }
 </style>

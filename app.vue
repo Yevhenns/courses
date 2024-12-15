@@ -5,8 +5,8 @@
     </div>
 </template>
 
-<style scoped lang="scss">
-@use "/assets/css/main.scss";
+<style scoped>
+@import "/assets/css/main.css";
 
 .app {
     display: flex;

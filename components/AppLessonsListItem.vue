@@ -26,43 +26,43 @@ const isLessonCompleted = () => {
     </div>
 </template>
 
-<style scoped lang="scss">
-@use "/assets/css/variables.scss" as *;
+<style scoped>
+@import "/assets/css/variables.css";
 
 .lessonsListItem {
-    background-color: $white-color;
+    background-color: var(--white-color);
     width: 100%;
     height: auto;
     border-radius: 16px;
     display: flex;
     gap: 20px;
     align-items: center;
-    box-shadow: $box-shadow;
+    box-shadow: var(--box-shadow);
     padding-right: 8px;
     cursor: pointer;
-    transition: $transition;
+    transition: var(--transition);
+}
 
-    &:hover {
-        transform: scale(1.02);
-    }
+.lessonsListItem:hover {
+    transform: scale(1.02);
+}
 
-    .lessonTitle {
-        background-color: inherit;
-        color: $heading-light-color;
-        margin-bottom: 4px;
-    }
+.lessonTitle {
+    background-color: inherit;
+    color: var(--heading-light-color);
+    margin-bottom: 4px;
+}
 
-    .lessonDescription {
-        background-color: inherit;
-        color: $heading-text-color;
-        font-size: 18px;
-        font-weight: 700;
-    }
+.lessonDescription {
+    background-color: inherit;
+    color: var(--heading-text-color);
+    font-size: 18px;
+    font-weight: 700;
+}
 
-    .successText {
-        background-color: inherit;
-        color: $success-color;
-        margin-left: auto;
-    }
+.successText {
+    background-color: inherit;
+    color: var(--success-color);
+    margin-left: auto;
 }
 </style>
