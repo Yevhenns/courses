@@ -37,6 +37,7 @@ import AppContainer from "~/shared/AppContainer.vue";
 <style scoped>
 .bannerSection {
     margin-top: 16px;
+    padding-top: 110px;
 }
 
 .banner {

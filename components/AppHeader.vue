@@ -26,6 +26,11 @@ import AppIconButton from "~/shared/AppIconButton.vue";
 <style>
 .header {
     border-bottom: 1px solid #c7c7c7;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f2f3fa;
+    z-index: 9;
 }
 .headerWrapper {
     padding: 16px 0;
