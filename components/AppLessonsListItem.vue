@@ -26,7 +26,7 @@ const isLessonCompleted = () => {
     </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .lessonsListItem {
     background-color: #ffffff;
     width: 100%;
@@ -38,24 +38,24 @@ const isLessonCompleted = () => {
     box-shadow: 0px 2px 7px 0px rgba(216, 107, 31, 0.14);
     padding-right: 8px;
     cursor: pointer;
-}
 
-.lessonTitle {
-    background-color: inherit;
-    color: #a0a0a0;
-    margin-bottom: 4px;
-}
+    .lessonTitle {
+        background-color: inherit;
+        color: #a0a0a0;
+        margin-bottom: 4px;
+    }
 
-.lessonDescription {
-    background-color: inherit;
-    color: #793708;
-    font-size: 18px;
-    font-weight: 700;
-}
+    .lessonDescription {
+        background-color: inherit;
+        color: #793708;
+        font-size: 18px;
+        font-weight: 700;
+    }
 
-.successText {
-    background-color: inherit;
-    color: green;
-    margin-left: auto;
+    .successText {
+        background-color: inherit;
+        color: green;
+        margin-left: auto;
+    }
 }
 </style>

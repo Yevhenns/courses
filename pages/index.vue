@@ -6,7 +6,7 @@
     </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .homeWrapper {
     overflow-y: scroll;
     -ms-overflow-style: none;

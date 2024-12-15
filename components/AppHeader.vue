@@ -23,7 +23,7 @@ import AppIconButton from "~/shared/AppIconButton.vue";
     </header>
 </template>
 
-<style>
+<style scoped lang="scss">
 .header {
     border-bottom: 1px solid #c7c7c7;
     position: fixed;
@@ -31,15 +31,16 @@ import AppIconButton from "~/shared/AppIconButton.vue";
     width: 100%;
     background-color: #f2f3fa;
     z-index: 9;
-}
-.headerWrapper {
-    padding: 16px 0;
-}
 
-.wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 8px;
+    .headerWrapper {
+        padding: 16px 0;
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 8px;
+    }
 }
 </style>

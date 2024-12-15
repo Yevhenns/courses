@@ -15,25 +15,25 @@
     </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .courseSelector {
     display: flex;
     gap: 10px;
     align-items: center;
-}
 
-.selectorButton {
-    display: flex;
-    align-items: center;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    color: #3a89fd;
-    font-size: 22px;
-    font-weight: 600;
-}
+    .selectorButton {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        color: #3a89fd;
+        font-size: 22px;
+        font-weight: 600;
+    }
 
-.selectorInfo {
-    color: #4e4e4e;
+    .selectorInfo {
+        color: #4e4e4e;
+    }
 }
 </style>

@@ -58,7 +58,7 @@ import AppContainer from "~/shared/AppContainer.vue";
     </section>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .section {
     margin-top: auto;
     background-color: #ffffff;
@@ -69,22 +69,22 @@ import AppContainer from "~/shared/AppContainer.vue";
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     box-shadow: 0px -4px 14px 0px rgba(65, 71, 114, 0.14);
-}
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-}
+    .nav {
+        display: flex;
+        justify-content: space-between;
+    }
 
-.nuxtLink {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    color: #ae978a;
-}
+    .nuxtLink {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        color: #ae978a;
+    }
 
-::v-deep(.router-link-active) {
-    color: #ff8733;
+    ::v-deep(.router-link-active) {
+        color: #ff8733;
+    }
 }
 </style>

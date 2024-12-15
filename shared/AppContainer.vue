@@ -4,7 +4,7 @@
     </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .container {
     padding: 0 16px;
     max-width: 768px;

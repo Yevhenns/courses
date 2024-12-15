@@ -42,31 +42,31 @@ const store = useCoursesStore();
     </section>
 </template>
 
-<style>
+<style scoped lang="scss">
 .lessonsListSection {
     margin: 16px;
-}
 
-.listWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
+    .listWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
 
-.chapterWrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    .chapterWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.chapter {
-    color: #793708;
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 4px;
-}
+    .chapter {
+        color: #793708;
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
 
-.chapterDescription {
-    color: #7a7a7a;
+    .chapterDescription {
+        color: #7a7a7a;
+    }
 }
 </style>

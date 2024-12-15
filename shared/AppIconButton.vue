@@ -14,7 +14,7 @@ defineProps({
     </button>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .notificationButton {
     position: relative;
     width: 50px;
