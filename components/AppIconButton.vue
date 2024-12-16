@@ -32,6 +32,11 @@ defineProps({
     border: none;
     border-radius: 16px;
     cursor: pointer;
+    transition: var(--transition);
+}
+
+.notificationButton:hover {
+    transform: scale(1.02);
 }
 
 .notificationCount {
