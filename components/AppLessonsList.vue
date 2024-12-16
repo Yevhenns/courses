@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { lessons } from "~/assets/fakeData/lessons";
 import { useCoursesStore } from "~/store/courses";
 
 const store = useCoursesStore();
@@ -33,7 +32,7 @@ const store = useCoursesStore();
                 </div>
                 <AppLessonsListItem
                     v-if="store.isShownLessons"
-                    v-for="lesson in lessons"
+                    v-for="lesson in store.allLessons"
                     :id="lesson.id"
                     :title="lesson.title"
                     :description="lesson.description"

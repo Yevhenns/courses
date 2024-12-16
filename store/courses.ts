@@ -1,6 +1,7 @@
 import { lessons } from "~/assets/fakeData/lessons";
 
 export const useCoursesStore = defineStore("courses", () => {
+    const allLessons = ref(lessons);
     const progressPercentage = ref(0);
     const isShownLessons = ref(true);
     const completedLessonsArray = ref([] as string[]);
@@ -24,6 +25,7 @@ export const useCoursesStore = defineStore("courses", () => {
     }
 
     return {
+        allLessons,
         progressPercentage,
         isShownLessons,
         completedLessonsArray,
