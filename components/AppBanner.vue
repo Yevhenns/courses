@@ -41,7 +41,7 @@
 }
 
 .banner {
-    border: var(border);
+    border: var(--border);
     background-color: var(--white-color);
     border-radius: 8px;
     overflow: hidden;

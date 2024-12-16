@@ -60,7 +60,9 @@
 @import "/assets/css/variables.css";
 
 .section {
-    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: var(--white-color);
     min-height: 80px;
     padding-top: 8px;

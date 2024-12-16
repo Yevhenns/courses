@@ -3,8 +3,8 @@
     --main-bg: #f2f3fa;
     --secondary-bg: #c7c7c7;
     --accent-color: #ff8733;
-    --border: 1px solid $accent-color;
-    --grey-border: 1px solid #c7c7c7;
+    --border: 1px solid var(--accent-color);
+    --grey-border: 1px solid var(--secondary-bg);
     --heading-text-color: #793708;
     --heading-light-color: #a0a0a0;
     --secondary-light-color: #ae978a;

@@ -21,8 +21,6 @@ const store = useCoursesStore();
 
 <style scoped>
 .main {
-    overflow-y: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    padding-bottom: 80px;
 }
 </style>
