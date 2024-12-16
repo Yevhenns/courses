@@ -8,7 +8,7 @@ const triggerConfetti = () => {
     useConfetti({ particleCount: 200, spread: 100, origin: { y: 0.6 } });
 };
 
-watch(() => store.progressCount === 100, triggerConfetti);
+watch(() => store.progressPercentage === 100, triggerConfetti);
 </script>
 
 <template>

@@ -11,7 +11,7 @@ const props = defineProps<{
 const store = useCoursesStore();
 
 const isLessonCompleted = () => {
-    return store.completedLessons.some((item) => item === props.id);
+    return store.completedLessonsArray.some((item) => item === props.id);
 };
 </script>
 
