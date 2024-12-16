@@ -12,7 +12,7 @@
 .popover {
     border: var(--border);
     width: 300px;
-    height: 400px;
+    min-height: calc(100vh - 112px);
     background-color: var(--white-color);
     border-radius: 8px;
     padding: 12px;
