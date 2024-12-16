@@ -1,18 +1,18 @@
 <script setup lang="ts">
-import ConfettiExplosion from "vue-confetti-explosion";
 import { useCoursesStore } from "~/store/courses";
+import useConfetti from "canvas-confetti";
 
 const store = useCoursesStore();
+
+const triggerConfetti = () => {
+    useConfetti({ particleCount: 200, spread: 100, origin: { y: 0.6 } });
+};
+
+watch(() => store.progressCount === 100, triggerConfetti);
 </script>
 
 <template>
     <main class="main">
-        <ConfettiExplosion
-            v-if="store.progressCount === 100"
-            :particleCount="200"
-            :particleSize="20"
-            :duration="5000"
-        />
         <AppHeader />
         <AppBanner />
         <AppLessonsList />
