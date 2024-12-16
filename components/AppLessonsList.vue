@@ -7,6 +7,7 @@ const store = useCoursesStore();
 
 <template>
     <section class="lessonsListSection">
+        <h2>Список уроків</h2>
         <AppContainer>
             <div class="listWrapper">
                 <div class="chapterWrapper">

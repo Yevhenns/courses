@@ -2,6 +2,7 @@
 
 <template>
     <section class="section">
+        <h2>Навігація</h2>
         <AppContainer>
             <nav class="nav">
                 <NuxtLink class="nuxtLink" to="/">

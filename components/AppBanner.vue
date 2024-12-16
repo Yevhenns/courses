@@ -2,6 +2,7 @@
 
 <template>
     <section class="bannerSection">
+        <h2>Банер</h2>
         <AppContainer>
             <div class="banner">
                 <div class="bannerInfo">
