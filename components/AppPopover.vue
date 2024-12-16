@@ -11,7 +11,7 @@
 
 .popover {
     border: var(--border);
-    width: 300px;
+    width: calc(100vw - 100px);
     min-height: calc(100vh - 112px);
     background-color: var(--white-color);
     border-radius: 8px;
