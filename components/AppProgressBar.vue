@@ -54,6 +54,6 @@ watch(() => store.progressPercentage, calculateProgress);
     height: 100%;
     top: 0;
     left: 0;
-    background-color: var(--red-color);
+    background-color: var(--success-color);
 }
 </style>
