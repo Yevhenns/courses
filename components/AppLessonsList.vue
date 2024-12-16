@@ -72,4 +72,13 @@ const store = useCoursesStore();
 .chapterDescription {
     color: var(--secondary-grey-color);
 }
+
+.icon-btn:hover .icon {
+    color: var(--button-hover);
+}
+
+.icon {
+    color: var(--accent-color);
+    transition: var(--transition);
+}
 </style>

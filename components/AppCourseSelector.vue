@@ -24,13 +24,14 @@ onClickOutside(target, () => (popoverIsShown.value = false));
                         popoverIsShown ? { transform: 'rotate(180deg)' } : {}
                     "
                     name="mynaui:chevron-down-solid"
-                    style="color: #3a89fd"
                     size="24"
                 />
             </button>
             <p class="selectorInfo">Лікар (В2)</p>
         </div>
-        <AppPopover ref="target" v-if="popoverIsShown" class="popover" />
+        <AppPopover ref="target" v-if="popoverIsShown" class="popover"
+            >Доступні курси</AppPopover
+        >
     </div>
 </template>
 
@@ -58,7 +59,7 @@ onClickOutside(target, () => (popoverIsShown.value = false));
 }
 
 .selectorButton:hover {
-    transform: scale(1.02);
+    color: var(--secondary-hover);
 }
 
 .icon {

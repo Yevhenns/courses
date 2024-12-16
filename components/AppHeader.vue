@@ -36,7 +36,9 @@ onClickOutside(target, () => (popoverIsShown.value = false));
                         ref="target"
                         v-if="popoverIsShown"
                         class="popover"
-                    />
+                    >
+                        Сповіщення прочитані
+                    </AppPopover>
                 </div>
                 <AppProgressBar />
             </div>
@@ -72,5 +74,14 @@ onClickOutside(target, () => (popoverIsShown.value = false));
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.icon-btn:hover .icon {
+    color: var(--button-hover);
+}
+
+.icon {
+    color: var(--accent-color);
+    transition: var(--transition);
 }
 </style>

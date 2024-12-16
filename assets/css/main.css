@@ -28,12 +28,3 @@ a {
 img {
     display: block;
 }
-
-.icon {
-    color: $accent-color;
-    transition: $transition;
-}
-
-.icon-btn:hover .icon {
-    color: $button-hover;
-}
