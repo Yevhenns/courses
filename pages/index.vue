@@ -1,28 +1,26 @@
 <script setup lang="ts">
-import ConfettiExplosion from "vue-confetti-explosion";
 import { useCoursesStore } from "~/store/courses";
+import useConfetti from "canvas-confetti";
 
 const store = useCoursesStore();
+
+const triggerConfetti = () => {
+    useConfetti({ particleCount: 200, spread: 100, origin: { y: 0.6 } });
+};
+
+watch(() => store.progressPercentage === 100, triggerConfetti);
 </script>
 
 <template>
-    <div class="homeWrapper">
-        <ConfettiExplosion
-            v-if="store.progressCount === 100"
-            :particleCount="200"
-            :particleSize="20"
-            :duration="5000"
-        />
+    <main class="main">
         <AppHeader />
         <AppBanner />
         <AppLessonsList />
-    </div>
+    </main>
 </template>
 
-<style scoped lang="scss">
-.homeWrapper {
-    overflow-y: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+<style scoped>
+.main {
+    padding-bottom: 80px;
 }
 </style>

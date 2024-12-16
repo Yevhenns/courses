@@ -7,6 +7,7 @@ const store = useCoursesStore();
 
 <template>
     <section class="lessonsListSection">
+        <h2>Список уроків</h2>
         <AppContainer>
             <div class="listWrapper">
                 <div class="chapterWrapper">
@@ -71,5 +72,14 @@ const store = useCoursesStore();
 
 .chapterDescription {
     color: var(--secondary-grey-color);
+}
+
+.icon-btn:hover .icon {
+    color: var(--button-hover);
+}
+
+.icon {
+    color: var(--accent-color);
+    transition: var(--transition);
 }
 </style>

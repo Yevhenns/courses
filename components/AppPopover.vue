@@ -1,7 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-    <div class="popover">Контент</div>
+    <div class="popover">
+        <slot></slot>
+    </div>
 </template>
 
 <style scoped>
@@ -10,10 +12,10 @@
 .popover {
     border: var(--border);
     width: 300px;
-    height: 400px;
+    min-height: calc(100vh - 112px);
     background-color: var(--white-color);
     border-radius: 8px;
-    padding: 4px;
+    padding: 12px;
     z-index: 2;
 }
 </style>

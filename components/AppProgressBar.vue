@@ -9,7 +9,7 @@ const progressWidth = ref(0);
 const calculateProgress = () => {
     if (bar.value) {
         const barWidth = bar.value.offsetWidth;
-        const calculatedProgress = (store.progressCount * barWidth) / 100;
+        const calculatedProgress = (store.progressPercentage * barWidth) / 100;
         progressWidth.value = calculatedProgress;
     }
 };
@@ -18,7 +18,7 @@ onMounted(() => {
     calculateProgress();
 });
 
-watch(() => store.progressCount, calculateProgress);
+watch(() => store.progressPercentage, calculateProgress);
 </script>
 
 <template>
@@ -26,7 +26,7 @@ watch(() => store.progressCount, calculateProgress);
         <div class="bar" ref="bar">
             <div class="progress" :style="{ width: `${progressWidth}px` }" />
         </div>
-        <span>{{ store.progressCount }}%</span>
+        <span>{{ store.progressPercentage }}%</span>
     </div>
 </template>
 

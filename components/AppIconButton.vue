@@ -9,22 +9,27 @@ defineProps({
 </script>
 
 <template>
-    <button class="notificationButton">
-        <slot></slot>
+    <div class="buttonWrapper">
+        <button class="notificationButton">
+            <slot></slot>
+        </button>
         <div
             v-if="isCountShown && notifications && notifications > 0"
             class="notificationCount"
         >
             {{ notifications }}
         </div>
-    </button>
+    </div>
 </template>
 
 <style scoped>
 @import "~/assets/css/variables.css";
 
-.notificationButton {
+.buttonWrapper {
     position: relative;
+}
+
+.notificationButton {
     width: 50px;
     height: 50px;
     background-color: var(--white-color);
@@ -32,6 +37,11 @@ defineProps({
     border: none;
     border-radius: 16px;
     cursor: pointer;
+    transition: var(--transition);
+}
+
+.notificationButton:hover {
+    transform: scale(1.02);
 }
 
 .notificationCount {

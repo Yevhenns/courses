@@ -2,6 +2,7 @@
 
 <template>
     <section class="bannerSection">
+        <h2>Банер</h2>
         <AppContainer>
             <div class="banner">
                 <div class="bannerInfo">
@@ -41,7 +42,7 @@
 }
 
 .banner {
-    border: var(border);
+    border: var(--border);
     background-color: var(--white-color);
     border-radius: 8px;
     overflow: hidden;
