@@ -6,7 +6,7 @@ const store = useCoursesStore();
 </script>
 
 <template>
-    <div class="homeWrapper">
+    <main class="main">
         <ConfettiExplosion
             v-if="store.progressCount === 100"
             :particleCount="200"
@@ -16,11 +16,11 @@ const store = useCoursesStore();
         <AppHeader />
         <AppBanner />
         <AppLessonsList />
-    </div>
+    </main>
 </template>
 
-<style scoped lang="scss">
-.homeWrapper {
+<style scoped>
+.main {
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;

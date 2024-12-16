@@ -49,7 +49,7 @@ onClickOutside(target, () => (popoverIsShown.value = false));
 
 .header {
     border-bottom: var(--grey-border);
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     background-color: var(--main-bg);
